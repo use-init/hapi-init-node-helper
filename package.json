@@ -1,0 +1,9 @@
+{
+  "name": "hapi-init-node-helper",
+  "version": "1.0.0",
+  "description": "Helper library for node applications",
+  "main": "index.js",
+  "repository": "git@github.com:use-init/hapi-init-node-helper.git",
+  "author": "Hans Christian Reinl <info@drublic.de>",
+  "license": "MIT"
+}
