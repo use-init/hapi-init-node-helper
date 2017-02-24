@@ -10,7 +10,7 @@ class Request {
 
     let promise = new Promise((resolve, reject) => {
       if (this.url.substr(this.url.length - 3) === '.gz') {
-        this.getGzipped(resolve, reject)
+        this.getGzipped(resolve, reject);
       } else {
         this.getFile(resolve, reject);
       }
@@ -38,7 +38,7 @@ class Request {
           resolve(buffer.join(''));
         }).on('error', reject);
     }).on('error', reject);
-  };
+  }
 
   getFile (resolve, reject) {
     request(this.url, (error, response, body) => {
@@ -51,4 +51,4 @@ class Request {
   }
 }
 
-module.exports = get;
+module.exports = Request;
