@@ -7,5 +7,10 @@ module.exports = {
   isFile: require('./lib/isFile'),
   readJsonFile: require('./lib/readJsonFile'),
   removeFile: require('./lib/removeFile'),
-  writeFile: require('./lib/writeFile')
+  writeFile: require('./lib/writeFile'),
+
+  /**
+   * All classes
+   */
+  Request: require('./classes/Request')
 };
